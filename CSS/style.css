@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css');
+:root {
+  --primaryColor: #ff6f61;
+  --secondaryColor: #1d1d1d;
+  --primaryFont: 'Roboto', sans-serif;
+  --secondaryFont: 'Josefin Sans', sans-serif;
+}
+/* COMMON CSS STARTS HERE */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+span,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+.container {
+  width: 1108px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.align_center {
+  align-items: center;
+}
+body {
+  font-family: var(--primaryFont);
+}
+/* COMMON CSS ENDS HERE */
+
+/* nav starts here */
+.customNav ul li a {
+  color: var(--primaryColor);
+  font-size: 16px;
+  line-height: 26px; /* 162.5% */
+  margin: 37px 22.5px;
+  display: block;
+}
+.customNav ul li:hover a {
+  color: #ff6f61;
+}
+.icons ul li {
+  display: inline-block;
+}
+.icons ul li a {
+  padding: 37px 10px;
+  font-size: 20px;
+  color: var(--secondaryColor);
+}
+.icons ul li span {
+  padding: 37px 10px;
+  font-size: 20px;
+  color: var(--secondaryColor);
+}
+.display_sm {
+  padding: 20px 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.display_sm .logo img {
+  height: 50px;
+}
+.display_sm i {
+  font-size: 24px;
+}
+.display_sm .menu button {
+  border: none;
+}
+.display_sm .offcanvas img {
+  height: 50px;
+}
+.offcanvas-body {
+  text-align: left;
+  margin-left: 20px;
+}
+.offcanvas-body ul li a {
+  padding: 10px 0;
+  display: block;
+  color: var(--secondaryColor);
+}
+/* nav ends here */
+
+/* banner */
+#banner .slides {
+  width: 100%;
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+}
+#banner .banner_cnt p {
+  color: #1d1d1d;
+  font-family: Josefin Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px; /* 155.556% */
+}
+#banner .banner_cnt h2 {
+  color: #1d1d1d;
+  font-family: Josefin Sans;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74px; /* 115.625% */
+  margin: 14px 0 16px 0;
+}
+#banner .banner_cnt h5 {
+  color: #1d1d1d;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  margin-bottom: 30px;
+}
+#banner .banner_cnt h6 a {
+  color: #fff;
+  font-family: Josefin Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px; /* 166.667% */
+  background-color: #ff6f61;
+  padding: 15px 45px;
+  display: inline-block;
+}
+/* #banner .banner_cnt {
+  transform: translateY(80%);
+  transition: 0.35s ease;
+}
+#banner .banner_cnt.slick-active .banner_cnt {
+  transform: translateY(0%);
+} */
+/* banner ends */
