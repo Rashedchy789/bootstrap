@@ -2,4 +2,18 @@
   #banner .slides {
     height: 300px;
   }
+  #banner .banner_cnt p {
+    font-size: 13px;
+  }
+  #banner .banner_cnt h2 {
+    font-size: 26px;
+    line-height: 15px;
+  }
+  #banner .banner_cnt h5 {
+    font-size: 11px;
+  }
+  #banner .banner_cnt h6 a {
+    font-size: 14px;
+    padding: 6px 19px;
+  }
 }
