@@ -12,8 +12,11 @@
   #banner .banner_cnt h5 {
     font-size: 11px;
   }
-  #banner .banner_cnt h6 a {
+  .heading a {
     font-size: 14px;
     padding: 6px 19px;
+  }
+  #banner .bannerDots {
+    display: none !important;
   }
 }
