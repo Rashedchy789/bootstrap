@@ -37,16 +37,24 @@ ol {
 body {
   font-family: var(--primaryFont);
 }
-.heading a {
+.button a {
   color: #fff;
+  background-color: var(--primaryColor);
   font-family: var(--secondaryFont);
   font-size: 18px;
   font-weight: 600;
   line-height: 30px; /* 166.667% */
-  background-color: #ff6f61;
   padding: 15px 45px;
   display: inline-block;
   border-radius: 10px;
+}
+.heading {
+  color: var(--secondaryColor);
+  text-align: center;
+  font-family: var(--secondaryFont);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
 }
 /* COMMON CSS ENDS HERE */
 
@@ -169,6 +177,14 @@ body {
   width: 30px;
   background-color: var(--primaryColor);
 }
+#banner .banner_cnt .button {
+  position: relative;
+}
+#banner .banner_cnt .arrow {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
 /* banner ends */
 #newProduct {
   padding-bottom: 96px;
@@ -176,10 +192,10 @@ body {
 #newProduct .heading.custom h2 {
   padding-bottom: 24px;
 }
-#newProduct .productSlider {
+.productSlider {
   position: relative;
 }
-#newProduct .productSlider .discount p {
+.productSlider .discount p {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -192,21 +208,21 @@ body {
   border-radius: 13px 0 0 13px;
   transform: rotate(-90deg);
 }
-#newProduct .productSlider img {
+.productSlider img {
   width: 100%;
 }
-#newProduct .productText {
+.productText {
   text-align: center;
   padding: 24px 0;
 }
-#newProduct .productText p {
+.productText p {
   color: var(--secondaryColor);
   font-family: var(--primaryFont);
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
 }
-#newProduct .productText h3 {
+.productText h3 {
   color: var(--secondaryColor);
   text-align: center;
   font-family: var(--primaryFont);
@@ -215,19 +231,19 @@ body {
   line-height: 28px;
   padding: 5px 0 11px 0;
 }
-#newProduct .star {
+.star {
   color: var(--primaryColor);
 }
-#newProduct .Productimages {
+.Productimages {
   position: relative;
 }
-#newProduct .Productimages .overlay {
+.Productimages .overlay {
   position: absolute;
   top: 50%;
   right: 17px;
   transform: translateY(-50%);
 }
-#newProduct .Productimages .overlay a {
+.Productimages .overlay a {
   width: 36px;
   height: 36px;
   margin-bottom: 10px;
@@ -239,13 +255,18 @@ body {
   line-height: 36px;
   transition: 0.45s;
 }
-#newProduct .Productimages .overlay li:hover a {
+.Productimages .overlay li:hover a {
   background-color: var(--primaryColor);
   color: #fff;
+}
+#newProduct .custm {
+  margin-bottom: 24px;
 }
 /* cosmetics starts here  */
 #cosmetics {
   padding: 103px 0;
 }
-
 /* cosmetics ends here  */
+#cream {
+  margin-bottom: 100px;
+}
