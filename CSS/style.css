@@ -76,11 +76,25 @@ body {
   padding: 37px 10px;
   font-size: 20px;
   color: var(--secondaryColor);
+  position: relative;
 }
 .icons ul li span {
-  padding: 37px 10px;
+  /* padding: 37px 10px; */
   font-size: 20px;
   color: var(--secondaryColor);
+}
+.icons .cardnumber span {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  font-size: 13px;
+  border-radius: 50%;
+  background-color: var(--primaryColor);
+  color: #fff;
+  text-align: center;
+  line-height: 17px;
+  right: 7px;
+  top: 38px;
 }
 .display_sm {
   padding: 20px 0;
@@ -110,6 +124,7 @@ body {
   display: block;
   color: var(--secondaryColor);
 }
+
 /* nav ends here */
 
 /* banner */
@@ -186,6 +201,8 @@ body {
   right: 15px;
 }
 /* banner ends */
+
+/* newProduct starts here */
 #newProduct {
   padding-bottom: 96px;
 }
@@ -262,11 +279,89 @@ body {
 #newProduct .custm {
   margin-bottom: 24px;
 }
+.Productimages .overlay li {
+  transform: translateX(-50px);
+  transition: 0.35s ease;
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: calc(0.15s * var(--number));
+}
+.Productimages .overlay:hover li {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+/* newProduct ends here */
+
 /* cosmetics starts here  */
 #cosmetics {
   padding: 103px 0;
 }
+
 /* cosmetics ends here  */
-#cream {
-  margin-bottom: 100px;
+#seller .head .custm {
+  margin-bottom: 20px;
 }
+#cream .background img {
+  position: relative;
+}
+#cream .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* countdown starts here */
+#countdown .head {
+  margin: 100px 0 70px 0;
+}
+#countdown .timer {
+  width: 1290px;
+  height: 646px;
+  background: #fff;
+  box-shadow: 0px 0px 70px 0px rgba(21, 26, 50, 0.08);
+}
+#countdown .timing {
+  margin: auto;
+  width: 424px;
+  height: 70px;
+  border-radius: 40px;
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(21, 26, 50, 0.1);
+  transform: translateY(-50%);
+}
+#countdown .timing ul li {
+  display: inline-block;
+  padding: 0 27px;
+  position: relative;
+}
+#countdown .timing ul {
+  text-align: center;
+}
+#countdown .timing span {
+  display: block;
+  color: var(--secondaryColor);
+  font-family: var(--secondaryFont);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+#countdown .timing ul li::before,
+#countdown .timing ul li::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: var(--primaryColor);
+  border-radius: 50%;
+  top: 12px;
+  right: 10px;
+}
+#countdown .timing ul li::after {
+  top: 38px;
+}
+#countdown .timing ul li:last-child::after,
+#countdown .timing ul li:last-child::before {
+  display: none;
+}
+
+/* countdown ends here */
