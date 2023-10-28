@@ -297,7 +297,26 @@ body {
 #cosmetics {
   padding: 103px 0;
 }
-
+#cosmetics .background {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#cosmetics .text h3 {
+  color: #fff;
+  font-family: var(--secondaryFont);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  padding-top: 90px;
+}
+#cosmetics .text p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 10px 0 30px 0;
+}
 /* cosmetics ends here  */
 #seller .head .custm {
   margin-bottom: 20px;
@@ -363,5 +382,45 @@ body {
 #countdown .timing ul li:last-child::before {
   display: none;
 }
-
+#countdown .lotion {
+  height: 485px;
+  background-repeat: no-repeat;
+}
+#countdown .dealsText h4 {
+  color: var(--secondaryColor);
+  font-family: var(--secondaryFont);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 35px 0 10px 0;
+}
+#countdown .dealsText h2 {
+  color: var(--secondaryColor);
+  font-family: var(--secondaryFont);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+}
+#countdown .dealsText p {
+  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 16px 0 19px 0;
+}
+#countdown .dealsText h3 {
+  color: var(--secondaryColor);
+  font-family: var(--secondaryFont);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+#countdown .dealsText h3 span {
+  color: #444;
+}
+#countdown .crm {
+  height: 485px;
+  background-repeat: no-repeat;
+}
 /* countdown ends here */
